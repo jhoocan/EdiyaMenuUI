@@ -1,3 +1,6 @@
 # EdiyaMenuUI
+
 ediya
-이것은 지후의 url
+
+ediya 이것은 오리진입니다.
+!
