@@ -1,6 +1,4 @@
 # EdiyaMenuUI
 
-ediya
+ediya 지현이 이긴다.
 
-ediya 이것은 오리진입니다.
-!
