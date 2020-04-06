@@ -1,0 +1,256 @@
+/* 애니메이션 */
+@keyframes init_slip {
+  form {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+header {
+  transform: translateY(-20em);
+  animation: init_slip 0.25s ease-in-out 0.05s 1 forwards;
+}
+h1 img {
+  transform: translateX(-20em);
+  animation: init_slip 0.3s ease-in-out 0.1s 1 forwards;
+}
+.burgerBars {
+  transform: translateX(20em);
+  animation: init_slip 0.3s ease-in-out 0.1s 1 forwards;
+}
+/* 글로벌 */
+body {
+  overflow-x: hidden;
+}
+body * {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* 접근성 모듈 */
+.a11yHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: circle(0, 0, 0);
+}
+/* 헤더 */
+header {
+  border-bottom: solid 1px rgb(207, 207, 207);
+  width: 100vw;
+}
+/* 로고 */
+h1 {
+  position: relative;
+
+  overflow: hidden;
+  white-space: nowrap;
+  width: 65%;
+
+  padding: 26px 0;
+}
+h1 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+}
+h1 img {
+  /* background-color: rgb(255, 255, 255); */
+  width: 100%;
+  max-width: 210px;
+}
+
+/* 네비게이션 */
+/* 햄버거 메뉴 */
+.navigation__wrapper {
+  background-color: rgba(30, 143, 255, 0.24);
+}
+.burgerBars {
+  padding: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  cursor: pointer;
+}
+.navigation input {
+  display: none;
+}
+/* 패티와 빵 */
+.burgerBars div {
+  background-color: dimgray;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+
+/* 네비게이션 오픈 */
+.siteMenu {
+  position: fixed;
+  z-index: 1;
+  /* 애초에 fixed 일 필요가 없어, 스크롤이 내려가면안되니까 */
+  top: 0;
+  right: -100vw;
+
+  background-color: rgba(33, 40, 60, 0.918);
+  width: 100%;
+  height: 100vh;
+  /* 사이트메뉴 가리기 */
+}
+/* noscript 일때 쓰는 style태그 안에 css */
+/* .entrance:checked + .siteMenu {
+  right: 0;
+  transition: 1s ease-in-out;
+}
+.exit:checked + .siteMenu {
+  right: -100vw;
+  transition: 1s ease-in-out;
+} */
+/*  */
+.siteMenu ul {
+  font-size: 12px;
+  margin-top: 10%;
+}
+.siteMenu li {
+  border-bottom: 1px rgb(47, 47, 219) solid;
+  padding: 15px;
+  color: white;
+}
+.siteMenu li:hover {
+  transition: 0.2s ease-in-out;
+  background-color: rgb(60, 81, 139);
+}
+.siteMenu a {
+}
+.siteMenu label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  padding: 8px 14px;
+  font-size: 1.6em;
+  color: white;
+  background-color: transparent;
+  /* background-image: url('./assets/button/navIcon.png'); */
+  background-position: -70px 0;
+  transition: 0.3s ease-in-out;
+}
+
+.siteMenu label:hover {
+  transform: scale(1.3);
+}
+/* 메인 음료 콘텐츠 */
+
+.main__wrapper {
+  margin: auto;
+  max-width: 840px;
+  margin-top: 15px;
+}
+.main__wrapper ol {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main__wrapper li {
+  flex: 1 1 300px;
+}
+main li {
+}
+.main__wrapper li {
+  display: inline-block;
+}
+
+.menu_item {
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+/* 음료 스펙 */
+.specification {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 이게뭘까 */
+  height: 95%;
+
+  text-align: left;
+  margin: 10px;
+  padding: 20px;
+
+  background-color: rgba(255, 255, 255, 0.411);
+  border: 1px lightgray solid;
+
+  display: none;
+}
+
+.open_spec {
+  display: block;
+  transition: 3s ease-in-out;
+}
+
+.specification h3 {
+  font-size: 1.2em;
+  line-height: 1.1em;
+  margin-top: 30px;
+}
+.specification h3 div {
+  font-size: 0.7em;
+  color: dimgray;
+}
+.specification p {
+  border-top: 2px solid;
+  padding: 20px 10px 20px 0;
+
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.specification button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  padding: 8px 18px;
+  font-size: 2em;
+  font-weight: lighter;
+}
+.specification button:hover {
+  background-color: rgba(240, 240, 240, 0.938);
+  transition: 0.2s ease-in-out;
+}
+
+dl {
+  padding: 20px;
+  columns: 2;
+  font-size: 0.9em;
+  background-color: rgb(240, 240, 240);
+}
+dt {
+  float: left;
+  min-width: 35%;
+}
+dd {
+  text-align: left;
+  min-width: 40%;
+  float: right;
+}
+
+/* 메뉴 카드 */
+.menu_card {
+  background-color: rgba(199, 199, 198, 0.281);
+  min-height: 350px;
+}
+.menu_card:hover .menu_card img {
+  transform: scale(1.3);
+}
+/* 푸터 */
