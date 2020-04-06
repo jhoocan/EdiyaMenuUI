@@ -1,0 +1,100 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    margin: auto;
+    max-width: 1280px;
+    display: inline-block;
+}
+/* 헤더 영역 */
+h1{
+    margin: 0;
+}
+.header{
+    position: relative;
+    position: sticky;
+    margin-top: 0;
+    width: 100%;
+    background-color:rgba(226, 226, 226, 0.555);
+    z-index: 1;
+    border-bottom: 1px solid gray;
+    padding-left: 3vh;
+    padding-bottom: 3vh;
+}
+.buttonBurger{
+    position: absolute;
+    right:50px;
+    top: 30px;
+    border: none;
+    background-color: transparent;
+}
+.burgerBar{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.positionTop,
+.positionMiddle,
+.positionBottom{
+    
+}
+.round{
+    border-radius: 5px;
+}
+/* 네비게이션 영역 */
+.appNavigation{
+    background-color:yellow;
+}
+/* 메뉴영역 */
+.menuList{
+    background-color: tomato;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    margin: 0;
+    right: -101%;
+}
+.menuSub{
+    list-style: none;
+}
+/* 메인 영역 */
+.imgBlock {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+}
+.coffee__img {
+    position: relative;
+    background-color: gainsboro;
+    margin: 10px;
+    width: 300px;
+    font-size: 1rem;
+    list-style: none;
+}
+.subInt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 2vh;
+}
+.subTitle{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.sub__enTitle{
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+
+@media screen and (maxwidth:999px) {
+
+}
+
+@media screen and (minwidth:1000px) {
+
+}
