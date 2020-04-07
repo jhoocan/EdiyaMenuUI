@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDIYA COFFEE</title>
+    <!-- 노멀라이저 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <!-- 메인 -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- JS -->
+    <script src="js/app.js" defer></script>
+    <!-- 패비콘 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <!-- * : 다른 방법도 있지만 굳이 이걸하는 이유 -->
+  <body>
+    <!-- 헤더 -->
+    <header>
+      <!-- 로고 -->
+      <h1>
+          대한민국 대표 커피 브랜드 이디야커피
+          <a href="#"><img src="./assets/Logo.svg" alt="EDIYA COFFEE"/></a>
+      </h1>
+      <!-- 햄버거 메뉴 -->
+      <nav class="navigation">
+        <!-- 메뉴보기 버튼 -->
+        <label for="entrance">
+            <a class="burgerBars">
+                <!-- * 이디야 디자인가이드라인준수하기 위한 제작 -->
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </label>
+        <input class="entrance" type="checkbox" name="" id="entrance" />
+        <!-- 사이트메뉴 리스트 -->
+        <section class="siteMenu" id="sideBar">
+            <h2 class="a11yHidden">사이트메뉴</h2>
+            <ul>
+                <li><a href="">메뉴</a></li>
+                <li><a href="">이디야멤버스</a></li>
+                <li><a href="">이디야커피랩</a></li>
+                <li><a href="">이디야컬처랩</a></li>
+                <li><a href="">공지사항</a></li>
+                <li data-bottombar="매장 찾기"><a href="">매장 찾기</a></li>
+            </ul>
+            <!-- 메뉴 나가기버튼 -->
+            <label for="exit">
+                ×
+            </label>
+            <input class="exit" type="checkbox" id="exit">
+            <!-- <img src="" alt="피그마이미지; 나가기" /> -->
+          </input>
+        </section>
+      </nav>
+    </header>
+    <!-- 메뉴판 -->
+    <main>
+        <div class="main__wrapper">
+            <h2 class="a11yHidden">메인메뉴</h2>
+            <ol>
+            <li class="menu_item">
+                <section class="specification ">
+                    <h3>
+                        ICED 벚꽃라떼
+                        <div>Iced Cherry Blossom Latte</div>
+                    </h3>
+                    <p>
+                        은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                    </p>
+                    <dl>
+                        <!-- row wrap 방식의 아름다움 -->
+                        <dt>칼로리</dt>
+                        <dd>393kcal</dd>
+                        <dt>당류</dt>
+                        <dd>35g</dd>
+                        <dt>단백질 </dt>
+                        <dd>7g</dd>
+                        <dt>포화지방</dt>
+                        <dd>18.6g</dd>
+                        <dt>나트륨</dt>
+                        <dd>149mg</dd>
+                        <dt>카페인</dt>
+                        <dd>0mg</dd>
+                    </dl>
+                    <!-- 스펙 그만보기 -->
+                    <button>
+                        ×
+                    </button>
+                </section>
+                <!-- 메뉴카드 보기 -->
+                <section class="menu_card">
+                    <a href="">
+                    <figure>
+                        <!-- srcset="./assets/beverages/2X/Ice/01_Ice_Cherry_Blossom_Latte.png" -->
+                        <img
+                        src="./assets/beverages/1X/ice/02_Ice_Cherry_Blossom_Latte.png"
+                        alt="얼음이 들어간 벚꽃라떼"
+                        title="얼음이 들어간 벚꽃라떼"
+                        />
+                        <figcaption>
+                        ICED 벚꽃라떼
+                        </figcaption>
+                    </figure>
+                    </a>
+                </section>
+            </li>
+            <li class="menu_item">
+                <section class="specification">
+                <h3>
+                    HOT 벚꽃라떼
+                    <div>Hot Cherry Blossom Latte</div>
+                </h3>
+                <p>
+                    은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                </p>
+                <dl>
+                    <!-- row wrap 방식의 아름다움 -->
+                    <dt>칼로리</dt>
+                    <dd>430kcal</dd>
+                    <dt>당류</dt>
+                    <dd>38g</dd>
+                    <dt>단백질</dt>
+                    <dd>10g</dd>
+                    <dt>포화지방</dt>
+                    <dd>19g</dd>
+                    <dt>나트륨</dt>
+                    <dd>190mg</dd>
+                    <dt>카페인</dt>
+                    <dd>0mg</dd>
+                </dl>
+                <!-- 스펙 그만보기 -->
+                <button>
+                    ×
+                </button>
+                </section>
+                <!-- 메뉴 카드 보기 -->
+                <section class="menu_card">
+                    <a href="">
+                    <figure>
+                        <!-- srcset="./assets/beverages/2X/Ice/01_Ice_Cherry_Blossom_Latte.png" -->
+                        <img
+                        src="./assets/beverages/1X/hot/02_Ice_Cherry_Blossom_Latte.png"
+                        alt="따듯한 벚꽃라떼"
+                        title="따듯한 벚꽃라떼"
+                        />
+                        <figcaption>
+                        HOT 벚꽃라떼
+                        </figcaption>
+                    </figure>
+                    </a>
+                </section>
+            </li>
+            <li class="menu_item">
+                <section class="specification">
+                <h3>
+                    HOT 벚꽃라떼
+                    <div>Hot Cherry Blossom Latte</div>
+                </h3>
+                <p>
+                    은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                </p>
+                <dl>
+                    <!-- row wrap 방식의 아름다움 -->
+                    <dt>칼로리</dt>
+                    <dd>430kcal</dd>
+                    <dt>당류</dt>
+                    <dd>38g</dd>
+                    <dt>단백질</dt>
+                    <dd>10g</dd>
+                    <dt>포화지방</dt>
+                    <dd>19g</dd>
+                    <dt>나트륨</dt>
+                    <dd>190mg</dd>
+                    <dt>카페인</dt>
+                    <dd>0mg</dd>
+                </dl>
+                <!-- 스펙 그만보기 -->
+                <button>
+                    X
+                </button>
+                </section>
+                <!-- 메뉴 카드 보기 -->
+                <section class="menu_card">
+                    <a href="">
+                    <figure>
+                        <!-- srcset="./assets/beverages/2X/Ice/01_Ice_Cherry_Blossom_Latte.png" -->
+                        <img
+                        src="./assets/beverages/1X/hot/02_Ice_Cherry_Blossom_Latte.png"
+                        alt="따듯한 벚꽃라떼"
+                        title="따듯한 벚꽃라떼"
+                        />
+                        <figcaption>
+                        HOT 벚꽃라떼
+                        </figcaption>
+                    </figure>
+                    </a>
+                </section>
+            </li>
+            <li class="menu_item">
+                <section class="specification">
+                <h3>
+                    HOT 벚꽃라떼
+                    <div>Hot Cherry Blossom Latte</div>
+                </h3>
+                <p>
+                    은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                </p>
+                <dl>
+                    <!-- row wrap 방식의 아름다움 -->
+                    <dt>칼로리</dt>
+                    <dd>430kcal</dd>
+                    <dt>당류</dt>
+                    <dd>38g</dd>
+                    <dt>단백질</dt>
+                    <dd>10g</dd>
+                    <dt>포화지방</dt>
+                    <dd>19g</dd>
+                    <dt>나트륨</dt>
+                    <dd>190mg</dd>
+                    <dt>카페인</dt>
+                    <dd>0mg</dd>
+                </dl>
+                <!-- 스펙 그만보기 -->
+                <button>
+                    X
+                </button>
+                </section>
+                <!-- 메뉴 카드 보기 -->
+                <section class="menu_card">
+                    <a href="">
+                    <figure>
+                        <!-- srcset="./assets/beverages/2X/Ice/01_Ice_Cherry_Blossom_Latte.png" -->
+                        <img
+                        src="./assets/beverages/1X/hot/02_Ice_Cherry_Blossom_Latte.png"
+                        alt="따듯한 벚꽃라떼"
+                        title="따듯한 벚꽃라떼"
+                        />
+                        <figcaption>
+                        HOT 벚꽃라떼
+                        </figcaption>
+                    </figure>
+                    </a>
+                </section>
+            </li>
+            <li class="menu_item">
+                <section class="specification">
+                <h3>
+                    HOT 벚꽃라떼
+                    <div>Hot Cherry Blossom Latte</div>
+                </h3>
+                <p>
+                    은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                </p>
+                <dl>
+                    <!-- row wrap 방식의 아름다움 -->
+                    <dt>칼로리</dt>
+                    <dd>430kcal</dd>
+                    <dt>당류</dt>
+                    <dd>38g</dd>
+                    <dt>단백질</dt>
+                    <dd>10g</dd>
+                    <dt>포화지방</dt>
+                    <dd>19g</dd>
+                    <dt>나트륨</dt>
+                    <dd>190mg</dd>
+                    <dt>카페인</dt>
+                    <dd>0mg</dd>
+                </dl>
+                <!-- 스펙 그만보기 -->
+                <button>
+                    X
+                </button>
+                </section>
+                <!-- 메뉴 카드 보기 -->
+                <section class="menu_card">
+                    <a href="">
+                    <figure>
+                        <!-- srcset="./assets/beverages/2X/Ice/01_Ice_Cherry_Blossom_Latte.png" -->
+                        <img
+                        src="./assets/beverages/1X/hot/02_Ice_Cherry_Blossom_Latte.png"
+                        alt="따듯한 벚꽃라떼"
+                        title="따듯한 벚꽃라떼"
+                        />
+                        <figcaption>
+                        HOT 벚꽃라떼
+                        </figcaption>
+                    </figure>
+                    </a>
+                </section>
+            </li>
+            <li class="menu_item">
+                <section class="specification">
+                <h3>
+                    HOT 벚꽃라떼
+                    <div>Hot Cherry Blossom Latte</div>
+                </h3>
+                <p>
+                    은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                </p>
+                <dl>
+                    <!-- row wrap 방식의 아름다움 -->
+                    <dt>칼로리</dt>
+                    <dd>430kcal</dd>
+                    <dt>당류</dt>
+                    <dd>38g</dd>
+                    <dt>단백질</dt>
+                    <dd>10g</dd>
+                    <dt>포화지방</dt>
+                    <dd>19g</dd>
+                    <dt>나트륨</dt>
+                    <dd>190mg</dd>
+                    <dt>카페인</dt>
+                    <dd>0mg</dd>
+                </dl>
+                <!-- 스펙 그만보기 -->
+                <button>
+                    X
+                </button>
+                </section>
+                <!-- 메뉴 카드 보기 -->
+                <section class="menu_card">
+                    <a href="">
+                    <figure>
+                        <!-- srcset="./assets/beverages/2X/Ice/01_Ice_Cherry_Blossom_Latte.png" -->
+                        <img
+                        src="./assets/beverages/1X/hot/02_Ice_Cherry_Blossom_Latte.png"
+                        alt="따듯한 벚꽃라떼"
+                        title="따듯한 벚꽃라떼"
+                        />
+                        <figcaption>
+                        HOT 벚꽃라떼
+                        </figcaption>
+                    </figure>
+                    </a>
+                </section>
+            </li>
+            <li class="menu_item">
+                <section class="specification">
+                <h3>
+                    HOT 벚꽃라떼
+                    <div>Hot Cherry Blossom Latte</div>
+                </h3>
+                <p>
+                    은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                </p>
+                <dl>
+                    <!-- row wrap 방식의 아름다움 -->
+                    <dt>칼로리</dt>
+                    <dd>430kcal</dd>
+                    <dt>당류</dt>
+                    <dd>38g</dd>
+                    <dt>단백질</dt>
+                    <dd>10g</dd>
+                    <dt>포화지방</dt>
+                    <dd>19g</dd>
+                    <dt>나트륨</dt>
+                    <dd>190mg</dd>
+                    <dt>카페인</dt>
+                    <dd>0mg</dd>
+                </dl>
+                <!-- 스펙 그만보기 -->
+                <button>
+                    X
+                </button>
+                </section>
+                <!-- 메뉴 카드 보기 -->
+                <section class="menu_card">
+                    <a href="">
+                    <figure>
+                        <!-- srcset="./assets/beverages/2X/Ice/01_Ice_Cherry_Blossom_Latte.png" -->
+                        <img
+                        src="./assets/beverages/1X/hot/02_Ice_Cherry_Blossom_Latte.png"
+                        alt="따듯한 벚꽃라떼"
+                        title="따듯한 벚꽃라떼"
+                        />
+                        <figcaption>
+                        HOT 벚꽃라떼
+                        </figcaption>
+                    </figure>
+                    </a>
+                </section>
+            </li>
+            <li class="menu_item">
+                <section class="specification">
+                <h3>
+                    HOT 벚꽃라떼
+                    <div>Hot Cherry Blossom Latte</div>
+                </h3>
+                <p>
+                    은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼
+                </p>
+                <dl>
+                    <!-- row wrap 방식의 아름다움 -->
+                    <dt>칼로리</dt>
+                    <dd>430kcal</dd>
+                    <dt>당류</dt>
+                    <dd>38g</dd>
+                    <dt>단백질</dt>
+                    <dd>10g</dd>
+                    <dt>포화지방</dt>
+                    <dd>19g</dd>
+                    <dt>나트륨</dt>
+                    <dd>190mg</dd>
+                    <dt>카페인</dt>
+                    <dd>0mg</dd>
+                </dl>
+                <!-- 스펙 그만보기 -->
+                <button>
+                    X
+                </button>
+                </section>
+                <!-- 메뉴 카드 보기 -->
+                <section class="menu_card">
+                    <a href="">
+                    <figure>
+                        <!-- srcset="./assets/beverages/2X/Ice/01_Ice_Cherry_Blossom_Latte.png" -->
+                        <img
+                        src="./assets/beverages/1X/hot/02_Ice_Cherry_Blossom_Latte.png"
+                        alt="따듯한 벚꽃라떼"
+                        title="따듯한 벚꽃라떼"
+                        />
+                        <figcaption>
+                        HOT 벚꽃라떼
+                        </figcaption>
+                    </figure>
+                    </a>
+                </section>
+            </li>
+            </ol>
+        </div>
+    </main>
+  </body>
+</html>
